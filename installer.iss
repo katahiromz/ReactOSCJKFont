@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "ReactOS CJK Font"
-#define MyAppVersion "1.2"
+#define MyAppVersion "1.3"
 #define MyAppPublisher "ReactOS Development Team"
 #define MyAppURL "https://reactos.org/"
 #define MyAppDirName "ReactOS CJK Font"
@@ -27,6 +27,7 @@ SolidCompression=yes
 DefaultGroupName={#MyAppDirName}
 DefaultDirName={pf}\{#MyAppDirName}
 AlwaysRestart=yes
+UninstallRestartComputer=yes
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -36,6 +37,7 @@ Source: "DroidSansFallback.ttf"; DestDir: "{fonts}"; FontInstall: "Droid Sans Fa
 Source: "LICENSE.txt"; DestDir: "{app}"
 
 [Icons]
+Name: "{group}\LICENSE.txt"; Filename: "{app}\LICENSE.txt"
 Name: "{group}\Uninstall"; Filename: "{uninstallexe}"
  
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
