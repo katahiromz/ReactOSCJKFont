@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "ReactOS CJK Font"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1"
 #define MyAppPublisher "ReactOS Development Team"
 #define MyAppURL "https://reactos.org/"
 
@@ -20,7 +20,7 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 CreateAppDir=yes
 LicenseFile=LICENSE.txt
-OutputBaseFilename=ReactOS-CJK-Font-setup
+OutputBaseFilename=ReactOS-CJK-Font-{#MyAppVersion}-setup
 Compression=lzma
 SolidCompression=yes
 DefaultDirName={pf}\ReactOS CJK Font
